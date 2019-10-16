@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Control Repairs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Control<br>Repairs</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="index.html#devices" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Devices</a> 
+    <a href="index.html#repairs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Repairs Info</a> 
+    <a href="index.html#postage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Postage</a> 
+    <a href="index.html#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Control Repairs</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+<div class="w3-container" style="margin-top:80px" id="devices">
+   <h1 class="w3-jumbo"><b>Priority Repair Service</b></h1>
+   <hr style="width:50px;border:5px solid red" class="w3-round">
+
+
+</div>
+<input type="hidden" name="*honeypot" />
+	<h1 class="w3-xxxlarge w3-text-red"><b>Enter Your Name</b></h1>
+<input name="Name" type="text" required>	
+	<h1 class="w3-xxxlarge w3-text-red"><b>Select Your Device Brand</b></h1>
+<form action="https://www.enformed.io/fowf510w" method="POST">
+<input name="Standard/Priority" type="hidden" value="Priority"/>
+  <input name="Device" list="device" required>
+  <datalist id="device">
+    <option value="Alcatel">
+    <option value="Asus">
+    <option value="Blackberry">
+    <option value="CAT">
+    <option value="Google">
+    <option value="HTC">
+    <option value="Huawei">
+    <option value="iPhone">
+    <option value="LG">
+    <option value="Microsoft">
+    <option value="Motorola">
+   	<option value="Nintendo">
+    <option value="Nokia">
+    <option value="OnePlus">
+    <option value="Oppo">
+    <option value="Playstation">
+    <option value="Samsung">
+    <option value="Sony">
+    <option value="Xbox">
+    <option value="Xiaomi">	
+  </datalist>
+	<h1 class="w3-xxxlarge w3-text-red"><b>Type Your Device Model (Include Year)</b></h1>
+  <input name="model" type="text" required>	
+  	<h1 class="w3-xxxlarge w3-text-red"><b>Select Your Repair Type</b></h1>
+<input name = "Repair" list="repair" required>
+  <datalist id="repair">
+    <option value="Battery">
+    <option value="Charging Board">
+    <option value="Disk Drive">
+    <option value="Fingerprint Reader">
+    <option value="Home Button">
+    <option value="Power Supply">
+    <option value="Rear Glass">
+    <option value="Rear Housing">
+    <option value="Screen">
+    <option value="SD Card Reader (Nintendo Switch ONLY)">
+  </datalist>
+<h1 class="w3-xxxlarge w3-text-red"><b>Phone Number</b></h1>
+  <input name="phonenum" type="number">
+<h1 class="w3-xxxlarge w3-text-red"><b>Email</b></h1>
+  <input name="email" type="email" required>
+
+<br><br><br>
+<button type="submit" class="w3-button w3-red w3-padding-large w3-hover-black">Send</button>
+</form>
+<br>
+
+</body>
+
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>

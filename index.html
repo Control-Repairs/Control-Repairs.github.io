@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Control Repairs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Control<br>Repairs</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#devices" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Devices</a> 
+    <a href="#repairs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Repairs Info</a> 
+    <a href="#postage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Postage</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Control Repairs</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+  <div class="w3-container" style="margin-top:80px" id="devices">
+    <h1 class="w3-jumbo"><b>Repair Service</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Devices</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/iphone.jpg" style="width:100%" onclick="onClick(this)" alt="iPhone<br><table>
+  <tr>
+    <th>Part</th>
+    <th>Device's</th>
+    <th>Price Range</th>
+  </tr>
+  <tr>
+    <td>Screen</td>
+    <td>XS Max - 5s</td>
+    <td>£200 - £40</td>
+  </tr>
+  <tr>
+    <td>Battery</td>
+    <td>XS Max - 5s</td>
+    <td>£50 - £20</td>
+  </tr>
+  <tr>
+    <td>Rear Glass</td>
+    <td>XS Max - 8 & 5s</td>
+    <td>£200 - £12</td>
+  </tr>
+  <tr>
+    <td>Charging Board</td>
+    <td>XS Max - 5s</td>
+    <td>£50 - £15</td>
+  </tr>
+  <tr>
+    <td>Rear Housing</td>
+    <td>7 Plus - 5s</td>
+    <td>£50 - £15</td>
+  </tr>
+  <tr>
+    <td>Home Button Repair</td>
+    <td>8 Plus - 5s</td>
+    <td>£60 - £10</td>
+  </tr>
+</table> ">
+      <img src="images/android.jpg" style="width:100%" onclick="onClick(this)" alt="Android Phone<br>Prices shown for Pixel 3 XL, prices may vary depending on your device<br><table>
+  <tr>
+    <th>Part</th>
+    <th>Device</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Screen</td>
+    <td>Pixel 3 XL</td>
+    <td>£150</td>
+  </tr>
+  <tr>
+    <td>Battery</td>
+    <td>Pixel 3 XL</td>
+    <td>£30</td>
+  </tr>
+  <tr>
+    <td>Rear Glass</td>
+    <td>Pixel 3 XL</td>
+    <td>£70</td>
+  </tr>
+  <tr>
+    <td>Charging Board</td>
+    <td>Pixel 3 XL</td>
+    <td>£20</td>
+  </tr>
+  <tr>
+    <td>Fingerprint Scanner</td>
+    <td>Pixel 3 XL</td>
+    <td>£20</td>
+  </tr>
+</table> ">
+      <img src="images/console.jpg" style="width:100%" onclick="onClick(this)" alt="Games Console<br>Prices shown are for Xbox One S, prices may vary depending on your console<br><br><table><tr>
+    <th>Part</th>
+    <th>Device</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Power Supply</td>
+    <td>Xbox One S</td>
+    <td>£60</td>
+  </tr>
+  <tr>
+    <td>Disc Drive</td>
+    <td>Xbox One S</td>
+    <td>£50</td>
+  </tr>
+  </table> ">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/ipad.jpeg" style="width:100%" onclick="onClick(this)" alt="iPad<br><table>
+  <tr>
+    <th>Part</th>
+    <th>Device's</th>
+    <th>Price Range</th>
+  </tr>
+  <tr>
+    <td>Screen</td>
+    <td>iPad Pro (All Models)</td>
+    <td>£220</td>
+  </tr>
+  <tr>
+    <td>Battery</td>
+    <td>iPad Pro (Home Button Model Only)</td>
+    <td>£50</td>
+  </tr>
+</table>">
+    </div>
+  </div>
+
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" style=""></p>
+    </div>
+  </div>
+
+
+  <div class="w3-container" id="repairs" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Repairs Info</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>All replacement parts are sourced from a reliable company and fitted with a 12 month warrenty</p>
+    <p>When replacing parts to your device, a great amount of car is put into making sure that you recieve the best possible repairs and leaving your device in a near new condition. This level of care is catered for in the costs of the repairs, and we will make sure that you are happy with the service you recieve. In most cases, there will be no evidence that your device has been opened, and will be returned to you in the same condition as you sent it to us in, however with the repairs completed.
+    </p>
+  </div>
+
+  <div class="w3-container" id="postage" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Postage and Packing</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Extra costs may apply</p>
+    <p>We take pride in making sure you are satisfied with the condition of your device when you recieve it. Postage to us will need to be covered by you, and on larger items - games consoles for example - will need to be covered by you. We make sure to use a suitable amount of packaging and a strong box when we return the item to you, in some cases your own packaging material will be re-used when sending it back to you, this will only happen when we are satisfied that your packaging will fully protect your device.</p>
+  </div>
+
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We have some options for our repairs, whilst the option you pick will not affect the quality of your repair - you will recieve some benifits if you select the "Priority" repair package.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Standard</li>
+        <li class="w3-padding-16">3-4 Day Repair Time (Bussiness Days)</li>
+        <li class="w3-padding-16">2nd Class Postage</li>
+        <li class="w3-padding-16">First Come First Serve Repair</li>
+        <li class="w3-padding-16">No Complimentary Screen Protector (screen repairs only)</li>
+        <li class="w3-padding-16">Notification of recieving and shipment</li>
+        <li class="w3-padding-16">
+          <h2>£0 Extra</h2>
+          <span class="w3-opacity">per device</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black"; onclick="window.location.href='standard.html'">Chose</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Priority</li>
+        <li class="w3-padding-16">1-2 Day Repair Time</li>
+        <li class="w3-padding-16">1st Class Postage</li>
+        <li class="w3-padding-16">Priority Repair</li>
+        <li class="w3-padding-16">Complimentary Screen Protector (screen repairs only)</li>
+        <li class="w3-padding-16">Notification of recieving and shipment</li>
+        <li class="w3-padding-16">
+          <h2>£5 Extra</h2>
+          <span class="w3-opacity">per device</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black"; onclick="window.location.href='priority.html'">Chose</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Got any questions or not seeing your device? Get in touch and we'll see what we can do!</p>
+    <form action="https://www.enformed.io/fowf510w" method="POST">
+    	<input name="Type" type="hidden" value="MainPage" />
+    	<input type="hidden" name="*honeypot" />
+	<input type="hidden" name="*redirect" value="thankyou.html" />
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+</div>
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
